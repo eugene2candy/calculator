@@ -7,6 +7,42 @@
   <title>Calculator</title>
 </head>
 <body>
-test
+  <div id="lcol">
+      <div id="doc">
+          <form name="calcform" autocomplete="off">
+          <table class="calc">
+            <tbody>
+            <tr>
+            <td colspan="2"><label for="x">Enter hex number:</label></td>
+            </tr>
+            <tr>
+            <td><input type="text" id="x" name="x" class="intext" autofocus tabindex="1"></td>
+            <td class="mathsymbol"><sub>16</sub></td>
+            </tr>
+            <tr>
+              <td colspan="2">
+              <button type="button" title="Convert" class="btn" tabindex="2" onclick="convert()"><img src="/lib/icons/glyphicons_all/glyphicons_halflings/glyphicons_halflings_030_refresh.png" alt=""> Convert</button>
+              <button type="reset" title="Reset" class="btn" tabindex="3"><img src="/lib/icons/glyphicons_all/glyphicons_halflings/glyphicons_halflings_013_remove.png" alt=""> Reset</button>
+              </td>
+            </tr>
+            <tr>
+            <td colspan="2">Binary Result:</td>
+            </tr>
+            <tr>
+            <td><textarea rows="2" id="y" class="outtext" readonly tabindex="5"></textarea></td>
+            <td class="mathsymbol"><sub>2</sub></td>
+            </tr>
+            <tr>
+            <td colspan="2">Decimal Result:</td>
+            </tr>
+            <tr>
+            <td><textarea rows="2" id="y2" class="outtext" readonly tabindex="6"></textarea></td>
+            <td class="mathsymbol"><sub>10</sub></td>
+            </tr>
+            </tbody>
+          </table>
+          </form>
+      </div>
+  </div>
 </body>
 </html>
