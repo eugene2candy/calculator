@@ -8,13 +8,17 @@
 	padding:0px;
 	margin-left:0px;
 }
+table {
+  display: table;
+}
 table.calc {
 	border-spacing: 0px;
 	border-collapse: separate;
 	background: #e8e8e8;
 	border:1px #ddd solid;
 	border-radius:7px;
-	-webkit-border-radius:7px;
+  -webkit-border-radius:7px;
+  padding: 20;
 }
 table.calc td {
 	padding: 2px;
@@ -23,6 +27,19 @@ table.calc td {
 	background: #e8e8e8;
 }
 input		{ font-size: 1em; }
+.calc {padding:20px;}
+.calc input[type=text] { padding:5px; font:x-large Arial; }
+.calc button { margin:10px auto; }
+.calc textarea { padding:5px; font:x-large Arial; }
+@media all and (max-width: 576px) {
+.calc { padding:15px; width:100%; }
+.calc input[type=text] { width:100%; }
+.calc textarea { width:100%; }
+}
+@media all and (min-width: 577px) {
+.calc input[type=text] { width:400px; }
+.calc textarea { width:400px; }
+}
 @media only screen and (max-width:799px) {
 	.btn { font-size: 1.2em; padding:7px; }
 }
