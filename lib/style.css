@@ -1,0 +1,31 @@
+#lcol {
+	display:inline-block;
+	vertical-align:top;
+	width:650px;
+	padding-right:10px;
+}
+#doc {
+	padding:0px;
+	margin-left:0px;
+}
+table.calc {
+	border-spacing: 0px;
+	border-collapse: separate;
+	background: #e8e8e8;
+	border:1px #ddd solid;
+	border-radius:7px;
+	-webkit-border-radius:7px;
+}
+table.calc td {
+	padding: 2px;
+	border-width: 0px;
+	border-style: none;
+	background: #e8e8e8;
+}
+input		{ font-size: 1em; }
+@media only screen and (max-width:799px) {
+	.btn { font-size: 1.2em; padding:7px; }
+}
+@media only screen and (min-width:800px) {
+	.btn { font-size: 1.2em; padding:4px; }
+}
